@@ -79,6 +79,7 @@ The raw data provided for this assignment contain below data under training and 
 **Data transformations** 
 
 The data transformations needed to produce the tidy data involve below steps
+
 1.  Read activity lables from activity_labels.txt file and features list (time and frequency domain variables) from "features.txt" file
 2.  Read activity labels, subject data and feature data for training and test sets from the respective files
 3.  Column bind training data sets to create combined training dataset containing Activity label, subject identifier and 561 feature variables. Similarly create combined test data set
