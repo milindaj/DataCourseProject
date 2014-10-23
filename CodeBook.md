@@ -47,7 +47,7 @@ requiredVars
 actDescLabel
 ```
 
-*This holds one of the tidy dataset requested as part of this assignment. The columns include Activity Label Description, Subject identifier and 66 feature variables containing meand and sd*
+*This holds one of the tidy dataset requested as part of this assignment. The columns include Activity Label Description(Character), Subject identifier(Ineteger) and 66 feature variables containing mean and sd (Numeric)*
 ```
 tidyData
 ```
@@ -57,7 +57,7 @@ tidyData
 tMelt
 ```
 
-*one of the tidy dataset requested as part of this assignment*
+*One of the tidy dataset requested as part of this assignment. This dataset has average of 66 feature variables containing mean and sd(Numeric) for each Activity(Character) and Subject(Integer)*
 ```
 tidyAvgData
 ```
