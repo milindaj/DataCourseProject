@@ -87,4 +87,4 @@ The data transformations needed to produce the tidy data involve below steps
 6.  Identify the feature variables which measure mean and standard daviation. This is achived by using grep() function
 7.  subset the combined dataset to include only mean and std variables along with Activity and Subject columns and create the tidy data set
 8.  To generate the tidy data set with average of variables across Activity Label and Subject, first melt the tidy data set created in above step using melt() function in reshape2 package followed by decasting it with mean() function using dcast function
-9.  Write out the dataset created in step above to a text file
+9.  Write out the dataset created in step above to a text file 
