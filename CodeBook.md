@@ -1,11 +1,12 @@
----
-title: "Code book"
-author: "milindaj"
-date: "October 23, 2014"
-output: html_document
----
 
-This code book contains details on the variables in R script(run_analysis.R), input data, steps in data transofomation
+Code book
+====================
+
+milindaj (October 23, 2014)
+---------------------
+
+
+This code book contains details on the variables in R script(run_analysis.R), input data and steps in data transofomation
 
 **Variables used in run_analysis.R**
 
@@ -78,12 +79,12 @@ The raw data provided for this assignment contain below data under training and 
 **Data transformations** 
 
 The data transformations needed to produce the tidy data involve below steps
-1. Read activity lables from activity_labels.txt file and features list (time and frequency domain variables) from "features.txt" file
-2. Read activity labels, subject data and feature data for training and test sets from the respective files
-3. Column bind training data sets to create combined training dataset containing Activity label, subject identifier and 561 feature variables. Similarly create combined test data set
-4. Row bind training and test data sets created in above step to create a single data set
-5. Assign descriptive column names to the combined dataset using the features list read in step 1
-6. Identify the feature variables which measure mean and standard daviation. This is achived by using grep() function
-7. subset the combined dataset to include only mean and std variables along with Activity and Subject columns and create the tidy data set
-8. To generate the tidy data set with average of variables across Activity Label and Subject, first melt the tidy data set created in above step using melt() function in reshape2 package followed by decasting it with mean() function using dcast function
-9. Write out the dataset created in step above to a text file
+1.  Read activity lables from activity_labels.txt file and features list (time and frequency domain variables) from "features.txt" file
+2.  Read activity labels, subject data and feature data for training and test sets from the respective files
+3.  Column bind training data sets to create combined training dataset containing Activity label, subject identifier and 561 feature variables. Similarly create combined test data set
+4.  Row bind training and test data sets created in above step to create a single data set
+5.  Assign descriptive column names to the combined dataset using the features list read in step 1
+6.  Identify the feature variables which measure mean and standard daviation. This is achived by using grep() function
+7.  subset the combined dataset to include only mean and std variables along with Activity and Subject columns and create the tidy data set
+8.  To generate the tidy data set with average of variables across Activity Label and Subject, first melt the tidy data set created in above step using melt() function in reshape2 package followed by decasting it with mean() function using dcast function
+9.  Write out the dataset created in step above to a text file
